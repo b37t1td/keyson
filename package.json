@@ -1,0 +1,35 @@
+{
+  "name": "keyson",
+  "version": "1.0.0",
+  "description": "Access nested json objects using simple string based paths.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run ci",
+    "mocha": "mocha tests/",
+    "lint": "eslint lib tests",
+    "ci": "npm run lint && npm run mocha",
+    "cov": "nyc npm run ci && nyc report --reporter=text-lcov | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b37t1td/keyson.git"
+  },
+  "keywords": [
+    "json",
+    "keys",
+    "nested"
+  ],
+  "author": "Svetlana Linuxenko <linuxenko@yahoo.com> (http://www.linuxenko.pro)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/b37t1td/keyson/issues"
+  },
+  "homepage": "https://github.com/b37t1td/keyson#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.15",
+    "eslint": "^3.11.1",
+    "mocha": "^3.2.0",
+    "nyc": "^10.0.0"
+  }
+}
