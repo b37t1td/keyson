@@ -27,7 +27,7 @@ npm install keyson
 
   keyson(obj, 'name'); // test
   keyson(obj, 'test.0'); //hello
-  keyson(obj, 'test.nested.2'); // 3
+  keyson(obj, 'test.2.nested.2'); // 3
 ```
 
 ### License
